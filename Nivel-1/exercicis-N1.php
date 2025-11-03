@@ -99,7 +99,8 @@ echo "<pre>";
 echo Calculator(10, 5, "division");
 ?>
 
-<h1 style="color: darkblue;">Exercici 4</h1><?php
+<h1 style="color: darkblue;">Exercici 4</h1>
+<?php
 
 function Contador($num = 10, $paso = 2) {
 
@@ -109,7 +110,36 @@ function Contador($num = 10, $paso = 2) {
 }
 
 // Contador(); //Por defecto 10
-
 Contador(10, 2);
+?>
+
+<h1 style="color: darkblue;">Exercici 5</h1>
+
+<?php 
+
+    function StGrade ($grade){
+
+    if ($grade >= 60) {
+        echo "Primera División";
+
+    } 
+    else if ($grade >= 45 && $grade <= 59) {
+        echo "Segunda División";
+
+    }
+    else if ($grade >= 33 && $grade <= 44) {
+        echo "Tercera  División";
+    }
+    else {
+        echo "reprobar";
+    }
+
+}
+echo "<h3>Notas de prueba:</h3>";
+
+StGrade(75); echo "<pre>";
+StGrade(54); echo "<pre>";
+StGrade(31); echo "<pre>";
 
 ?>
+
