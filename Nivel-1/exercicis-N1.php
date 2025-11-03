@@ -140,6 +140,21 @@ echo "<h3>Notas de prueba:</h3>";
 StGrade(75); echo "<pre>";
 StGrade(54); echo "<pre>";
 StGrade(31); echo "<pre>";
-
 ?>
 
+<h1 style="color: darkblue;">Exercici 6</h1>
+
+<?php
+$int = rand(0, 1);
+
+function isBitten ($int) {
+    if ($int == 1) {
+    return  TRUE;
+} 
+else 
+    {
+    return FALSE;
+}
+}
+var_dump(isBitten($int));
+?>
