@@ -98,7 +98,6 @@ echo Calculator(14, 2, "multiplicacion");
 echo "<pre>";
 echo Calculator(10, 5, "division");
 
-
 ?>
 
 
