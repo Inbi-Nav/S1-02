@@ -2,7 +2,7 @@
 
 **Descripción:**  
 Colección de ejercicios diseñados para practicar los fundamentos del lenguaje **PHP**, incluyendo variables, tipos de datos, constantes, funciones, condicionales, bucles y operaciones aritméticas.  
-Esta práctica se divide en **tres niveles de dificultad**, avanzando progresivamente desde los conceptos básicos hasta ejercicios más lógicos y funcionales.
+Esta práctica se divide en **tres niveles **, avanzando progresivamente desde los conceptos básicos hasta ejercicios más lógicos y funcionales.
 
 ---
 
