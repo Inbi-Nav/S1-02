@@ -97,12 +97,19 @@ echo "<pre>";
 echo Calculator(14, 2, "multiplicacion");
 echo "<pre>";
 echo Calculator(10, 5, "division");
-
 ?>
 
+<h1 style="color: darkblue;">Exercici 4</h1><?php
 
+function Contador($num = 10, $paso = 2) {
 
+    for ($i = 0; $i <= $num; $i += $paso) {
+        echo $i . "<br>";
+    }
+}
 
+// Contador(); //Por defecto 10
 
+Contador(10, 2);
 
-
+?>

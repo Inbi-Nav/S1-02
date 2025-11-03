@@ -13,7 +13,7 @@ Esta práctica se divide en **tres niveles **, avanzando progresivamente desde l
 
 ---
 
-## 🚀 Instalación y ejecución
+##  Instalación y ejecución
 1. Clonar el repositorio:  
    ```bash
    git clone https://github.com/Inbi-Nav/S1-02.git
