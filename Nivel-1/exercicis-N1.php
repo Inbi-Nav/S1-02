@@ -18,3 +18,19 @@ const MY_NAME = 'Inbi';
 ?>
 
 <h1><?= MY_NAME; ?></h1>
+
+<h1 style="color: darkblue;">Exercici 2</h1>
+<?php
+$string = "Hello World!";
+$course = "Este es el curso de PHP";
+echo "$string";
+echo "<pre>";
+print(strtoupper($string));
+echo "<pre>";
+print(strlen($string));
+echo "<pre>";
+echo "$string ". "$course";
+?>
+
+
+
