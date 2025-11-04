@@ -1,9 +1,10 @@
 <h1 style="color: darkblue;">Exercici 1</h1>
+
 <?php
-$age = 40;
-$percentage = 77.89;
-$name = "Emma";
-$IsStudent = "False";
+$age = 40;               
+$percentage = 77.89;     
+$name = "Emma";          
+$IsStudent = false;      
 
 echo "<pre>";
 print($age);
@@ -14,9 +15,12 @@ print($name);
 echo "<pre>";
 print($IsStudent);
 
-const MY_NAME = 'Inbi';
+define("MY_NAME", "Inbi");
 ?>
+
 <h1><?= MY_NAME; ?></h1>
+
+
 <h1 style="color: darkblue;">Exercici 2</h1>
 <?php
 $string = "Hello World!";
@@ -76,7 +80,7 @@ $M = 71.15;
 $a =2 ;
 $b = 4;
 
-function Calculator ($a, $b, $operacion){
+function CalcularOperacion(int|float $a, int|float $b, string $operacion): int|float {
 
     switch ($operacion) {
     case "suma":
@@ -85,18 +89,20 @@ function Calculator ($a, $b, $operacion){
         return $a - $b;
     case "multiplicacion":
         return $a * $b;
-    default:
-        return $a / $b;
+    case "division":
+        return $b != 0 ? $a / $b : 0; 
+        default:
+            return 0;
     }
 }
 echo "<pre>";
-echo Calculator(2, 4, "suma");
+echo CalcularOperacion(2, 4, "suma");
 echo "<pre>";
-echo Calculator(34, 30, "resta");
+echo CalcularOperacion(34, 30, "resta");
 echo "<pre>";
-echo Calculator(14, 2, "multiplicacion");
+echo CalcularOperacion(14, 2, "multiplicacion");
 echo "<pre>";
-echo Calculator(10, 5, "division");
+echo CalcularOperacion(10, 5, "division");
 ?>
 
 <h1 style="color: darkblue;">Exercici 4</h1>
@@ -117,29 +123,30 @@ Contador(10, 2);
 
 <?php 
 
-    function StGrade ($grade){
+    function evaluarNota ($grade){
 
     if ($grade >= 60) {
-        echo "Primera División";
+        return "Primera División";
 
     } 
-    else if ($grade >= 45 && $grade <= 59) {
-        echo "Segunda División";
+    else if ($grade >= 45) {
+        return "Segunda División";
 
     }
-    else if ($grade >= 33 && $grade <= 44) {
-        echo "Tercera  División";
+    else if ($grade >= 33) {
+        return "Tercera  División";
     }
     else {
-        echo "reprobar";
+        return "Repronbado";
     }
 
 }
 echo "<h3>Notas de prueba:</h3>";
 
-StGrade(75); echo "<pre>";
-StGrade(54); echo "<pre>";
-StGrade(31); echo "<pre>";
+echo evaluarNota(75) . "<br>"; 
+echo evaluarNota(25) . "<br>"; 
+echo evaluarNota(38) . "<br>"; 
+echo evaluarNota(58) . "<br>"; 
 ?>
 
 <h1 style="color: darkblue;">Exercici 6</h1>
