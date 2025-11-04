@@ -9,23 +9,17 @@ function CalcularLlamada ($tiempoLlamada, $pagar) {
         
         } else {
         $minutosExtra = $tiempoLlamada - 3;
-        return $pagar = 10 + ($minutosExtra * 5);
+        return  10 + ($minutosExtra * 5);
 }
     }
 
     $pagar = 10;
-    echo CalcularLlamada(6, $pagar)
+    echo CalcularLlamada(5, $pagar)
 ?>
 
 <h1 style="color: darkblue;">Exercici 2 Nivel 2</h1>
 
 <?php
-
-$a = rand(0, 9999);
-$b = rand(0, 9999);
-$c = rand(0, 9999);
-$SumaPuntuacion = CalcularSuma($a, $b, $c);
-
 function CalcularSuma ($a, $b, $c) {
 
    $SumaPuntuacion = $a + $b + $c;
@@ -47,6 +41,12 @@ function Clasificacion ($SumaPuntuacion) {
             return "Professional";
         }
 }
+
+
+$a = rand(0, 9999);
+$b = rand(0, 9999);
+$c = rand(0, 9999);
+$SumaPuntuacion = CalcularSuma($a, $b, $c);
 
 echo "<strong>La suma total de puntuacion es: </strong>" . CalcularSuma($a, $b, $c) ; 
 echo "<br><strong> La media total es: </strong>" . CalcularMedia($SumaPuntuacion);
