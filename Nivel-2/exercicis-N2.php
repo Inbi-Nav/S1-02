@@ -1,20 +1,25 @@
-<h1 style="color: darkblue;">Exercici 1 Nivel 2</h1>
+<h1 style="color: darkblue;">Exercici 1 Nivel 2 </h1>
 
 <?php
+function CalcularCostoLlamada($tiempoLlamada, $costoPrimerosMinutos = 10, $costoMinutoExtra = 5, $minutosIncluidos = 3) {
 
-function CalcularLlamada ($tiempoLlamada, $pagar) {
-
-        if ($tiempoLlamada  <= 3) {
-        return $pagar;
-        
-        } else {
-        $minutosExtra = $tiempoLlamada - 3;
-        return  10 + ($minutosExtra * 5);
-}
+    if ($tiempoLlamada < 0) {
+        return "Errorr= tiempo no puede ser negativo !";
     }
+    
+    if ($tiempoLlamada <= $minutosIncluidos) {
+        return $costoPrimerosMinutos;
+    } else {
+        $minutosExtra = $tiempoLlamada - $minutosIncluidos;
+        $costoTotal = $costoPrimerosMinutos + ($minutosExtra * $costoMinutoExtra);
+        return $costoTotal;
+    }
+}
 
-    $pagar = 10;
-    echo CalcularLlamada(5, $pagar)
+echo "<strong>Llamada de 2 minutos:</strong> " . CalcularCostoLlamada(2) . " centimos<br>";
+echo "<strong>Llamada de 5 minutos:</strong> " . CalcularCostoLlamada(5) . " centimos<br>";
+echo "<strong>Llamada de 10 minutos:</strong> " . CalcularCostoLlamada(10) . " centimos<br>";
+echo "<strong>Tiempo negativvo:</strong> " . CalcularCostoLlamada(-1) . "<br>";
 ?>
 
 <h1 style="color: darkblue;">Exercici 2 Nivel 2</h1>
